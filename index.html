@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <!-- Font Family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <!-- script Js & JS Library -->
+  <script type="module" src="/main.js"></script>
+  <!-- Tailwind / CSS Libray -->
+  <link rel="stylesheet" href="./src/css/output.css">
+</head>
+
+<body class=" bg-Off-white-neutral font-display ">
+  <!-- wrapper -->
+  <main class="container h-screen flex flex-col justify-center items-center">
+    <div
+      class="flex flex-col justify-start items-start bg-White-neutral w-[100%] h-[80%] rounded-t-2xl rounded-bl-2xl rounded-br-[8rem]">
+      <!-- form wrapper -->
+      <form class="relative flex flex-row pt-8 pl-8">
+        <!-- box input day -->
+        <div class="flex flex-col justify-start items-start pl-8">
+          <label for="day" class="pb-2 text-sm text-Smokey-grey-neutral font-extrabold">DAY</label>
+          <input type="number" name="day" placeholder="DD" required
+            class="border-Light-grey-neutral rounded-lg border border-solid placeholder:text-Smokey-grey-neutral placeholder:font-black w-32 h-12 placeholder:text-xl placeholder:pl-4">
+        </div>
+        <!-- box input month -->
+        <div class="flex flex-col justify-start items-start pl-8">
+          <label for="month" class="pb-2 text-sm text-Smokey-grey-neutral font-extrabold">MM</label>
+          <input type="number" name="month" placeholder="MM" required
+            class="border-Light-grey-neutral rounded-lg border border-solid placeholder:text-Smokey-grey-neutral placeholder:font-black w-32 h-12 placeholder:text-xl placeholder:pl-4">
+        </div>
+        <!-- box input year -->
+        <div class="flex flex-col justify-start items-start pl-8">
+          <label for="year" class="pb-2 text-sm text-Smokey-grey-neutral font-extrabold">
+            YEAR
+          </label>
+          <input type="number" name="year" placeholder="YYYY" required
+            class="border-Light-grey-neutral rounded-lg border border-solid placeholder:text-Smokey-grey-neutral placeholder:font-black w-32 h-12 placeholder:text-xl placeholder:pl-4">
+        </div>
+        <!-- submit -->
+        <div class="flex border-2 border-Smokey-grey-neutral flex-row items-end justify-end">
+
+        </div>
+      </form>
+    </div>
+  </main>
+
+</body>
+
+</html>

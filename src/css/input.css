@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* container */
+@layer components {
+  .container {
+    @apply max-w-3xl py-8 mx-auto;
+  }
+}
