@@ -9,7 +9,7 @@
   <!-- Font Family -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;1,400&display=swap" rel="stylesheet">
   <!-- script Js & JS Library -->
   <script type="module" src="/main.js"></script>
   <!-- Tailwind / CSS Libray -->
@@ -20,39 +20,38 @@
   <!-- wrapper -->
   <main class="container flex flex-col items-center justify-center h-screen">
     <div
-      class="flex relative flex-col justify-start items-start bg-White-neutral w-[100%] h-[80%] rounded-t-2xl rounded-bl-2xl rounded-br-[8rem]">
+      class="flex relative flex-col justify-start items-start bg-White-neutral  max-w-xs  lg:max-w-2xl xl:w-[160%] h-[80%] rounded-t-2xl rounded-bl-2xl rounded-br-[8rem]">
       <!-- form wrapper -->
-      <form class="flex pt-8 pl-8">
+      <form class="flex pt-6 lg:pl-8 lg:pt-8">
         <!-- wrapper input -->
         <div class="flex flex-row">
           <!-- box input day -->
-          <div class="flex flex-col items-start justify-start pl-8">
-            <label for="day" class="pb-2 text-sm font-extrabold text-Smokey-grey-neutral">DAY</label>
+          <div class="flex flex-col items-start justify-start pl-4 lg:pl-8">
+            <label for="day" class="pb-2 text-xs font-extrabold lg:text-sm text-Smokey-grey-neutral">DAY</label>
             <input type="number" name="day" placeholder="DD" required
-              class="w-32 h-12 border border-solid rounded-lg border-Light-grey-neutral placeholder:text-Smokey-grey-neutral placeholder:font-black placeholder:text-xl placeholder:pl-4">
+              class="w-20 h-12 pl-4 border border-solid rounded-lg lg:w-32 border-Light-grey-neutral placeholder:text-Smokey-grey-neutral placeholder:font-black lg:placeholder:text-xl placeholder:pl-0 lg:placeholder:pl-4">
           </div>
           <!-- box input month -->
-          <div class="flex flex-col items-start justify-start pl-8">
-            <label for="month" class="pb-2 text-sm font-extrabold text-Smokey-grey-neutral">MM</label>
+          <div class="flex flex-col items-start justify-start pl-4 lg:pl-8">
+            <label for="month" class="pb-2 text-xs font-extrabold lg:text-sm text-Smokey-grey-neutral">MM</label>
             <input type="number" name="month" placeholder="MM" required
-              class="w-32 h-12 border border-solid rounded-lg border-Light-grey-neutral placeholder:text-Smokey-grey-neutral placeholder:font-black placeholder:text-xl placeholder:pl-4">
+              class="w-20 h-12 pl-4 border border-solid rounded-lg lg:w-32 border-Light-grey-neutral placeholder:text-Smokey-grey-neutral placeholder:font-black lg:placeholder:text-xl placeholder:pl-0 lg:placeholder:pl-4">
           </div>
           <!-- box input year -->
-          <div class="flex flex-col items-start justify-start pl-8">
-            <label for="year" class="pb-2 text-sm font-extrabold text-Smokey-grey-neutral">
+          <div class="flex flex-col items-start justify-start pl-4 lg:pl-8">
+            <label for="year" class="pb-2 text-xs font-extrabold lg:text-sm text-Smokey-grey-neutral">
               YEAR
             </label>
             <input type="number" name="year" placeholder="YYYY" required
-              class="w-32 h-12 border border-solid rounded-lg border-Light-grey-neutral placeholder:text-Smokey-grey-neutral placeholder:font-black placeholder:text-xl placeholder:pl-4">
+              class="w-20 h-12 pl-4 border border-solid rounded-lg lg:w-32 border-Light-grey-neutral placeholder:text-Smokey-grey-neutral placeholder:font-black lg:placeholder:text-xl placeholder:pl-0 lg:placeholder:pl-4">
           </div>
         </div>
-
         <!-- submit -->
         <div class="flex flex-col self-center justify-center pl-8 mt-16">
           <button
-            class="flex flex-col justify-center items-center text-center z-[999] rounded-full w-20 h-20 bg-Purple-primary">
+            class="absolute lg:top-[7rem] lg:left-[36rem] lg:right-0 lg:mx-0 top-[7.5rem] left-0 right-0 mx-auto translaye flex flex-col justify-center items-center text-center z-[999] rounded-full lg:w-16 lg:h-16 w-12 h-12 bg-Purple-primary">
             <!-- svg -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 lg:w-8 lg:h-8" viewBox="0 0 46 44">
               <g fill="none" stroke="#FFF" stroke-width="2">
                 <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
               </g>
@@ -62,38 +61,40 @@
       </form>
       <!-- result -->
       <div
-        class=" absolute top-36 ml-16  flex flex-col items-start justify-center w-[70%]  border-t-2 border-t-Light-grey-neutral">
+        class="  absolute top-36 ml-8 lg:ml-16  flex flex-col items-start justify-center w-[80%] lg:w-[80%]  border-t-2 border-t-Light-grey-neutral">
         <!-- box result years -->
-        <div class="flex flex-row items-start justify-between pt-8 ">
+        <div class="flex flex-row items-start justify-between pt-16 lg:pt-4 ">
           <!-- result -->
-          <div class="pr-4">
-            <h1 class="font-extrabold text-7xl text-Purple-primary">- -</h1>
+          <div class="flex flex-row pr-4">
+            <h1 class="text-4xl font-extrabold lg:text-7xl text-Purple-primary">- -</h1>
           </div>
           <!-- date -->
-          <div class="pl-4">
-            <h1 class="text-6xl font-black text-Off-black-neutral">years</h1>
+          <div class="pl-1 ">
+            <h1 class="text-4xl font-black lg:text-6xl text-Off-black-neutral">
+              years
+            </h1>
           </div>
         </div>
         <!-- box result months -->
-        <div class="flex flex-row items-start justify-between ">
+        <div class="flex flex-row items-start justify-between pt-2 lg:pt-2">
           <!-- result -->
           <div class="pr-4">
-            <h1 class="font-extrabold text-7xl text-Purple-primary">- -</h1>
+            <h1 class="text-4xl font-extrabold lg:text-7xl text-Purple-primary">- -</h1>
           </div>
           <!-- date -->
-          <div class="pl-4">
-            <h1 class="text-6xl font-black text-Off-black-neutral">months</h1>
+          <div class="pl-1 ">
+            <h1 class="text-4xl font-black lg:text-6xl text-Off-black-neutral">months</h1>
           </div>
         </div>
         <!-- box result days -->
-        <div class="flex flex-row items-start justify-between ">
+        <div class="flex flex-row items-start justify-between pt-2 lg:pt-2">
           <!-- result -->
           <div class="pr-4">
-            <h1 class="font-extrabold text-7xl text-Purple-primary">- -</h1>
+            <h1 class="text-4xl font-extrabold lg:text-7xl text-Purple-primary">- -</h1>
           </div>
           <!-- date -->
-          <div class="pl-4">
-            <h1 class="text-6xl font-black text-Off-black-neutral">days</h1>
+          <div class="pl-1">
+            <h1 class="text-4xl font-black lg:text-6xl text-Off-black-neutral">days</h1>
           </div>
         </div>
       </div>
