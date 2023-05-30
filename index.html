@@ -21,20 +21,21 @@
   <main class="container flex flex-col items-center justify-center h-screen">
     <div
       class="flex relative flex-col justify-start items-start bg-White-neutral  max-w-xs  lg:max-w-2xl xl:w-[160%] h-[80%] rounded-t-2xl rounded-bl-2xl rounded-br-[8rem]">
+      <div class="text-xl text-red-600 err"></div>
       <!-- form wrapper -->
-      <form class="flex pt-6 lg:pl-8 lg:pt-8">
+      <form id="form" action="/" method="get" class="flex pt-6 lg:pl-8 lg:pt-8">
         <!-- wrapper input -->
         <div class="flex flex-row">
           <!-- box input day -->
           <div class="flex flex-col items-start justify-start pl-4 lg:pl-8">
             <label for="day" class="pb-2 text-xs font-extrabold lg:text-sm text-Smokey-grey-neutral">DAY</label>
-            <input type="number" name="day" placeholder="DD" required
+            <input aria-label="day" type="number" name="day" placeholder="DD" required
               class="w-20 h-12 pl-4 border border-solid rounded-lg lg:w-32 border-Light-grey-neutral placeholder:text-Smokey-grey-neutral placeholder:font-black lg:placeholder:text-xl placeholder:pl-0 lg:placeholder:pl-4">
           </div>
           <!-- box input month -->
           <div class="flex flex-col items-start justify-start pl-4 lg:pl-8">
             <label for="month" class="pb-2 text-xs font-extrabold lg:text-sm text-Smokey-grey-neutral">MM</label>
-            <input type="number" name="month" placeholder="MM" required
+            <input aria-label="month" type="number" name="month" placeholder="MM" required
               class="w-20 h-12 pl-4 border border-solid rounded-lg lg:w-32 border-Light-grey-neutral placeholder:text-Smokey-grey-neutral placeholder:font-black lg:placeholder:text-xl placeholder:pl-0 lg:placeholder:pl-4">
           </div>
           <!-- box input year -->
@@ -42,13 +43,13 @@
             <label for="year" class="pb-2 text-xs font-extrabold lg:text-sm text-Smokey-grey-neutral">
               YEAR
             </label>
-            <input type="number" name="year" placeholder="YYYY" required
+            <input aria-label="year" type="number" name="year" placeholder="YYYY" required
               class="w-20 h-12 pl-4 border border-solid rounded-lg lg:w-32 border-Light-grey-neutral placeholder:text-Smokey-grey-neutral placeholder:font-black lg:placeholder:text-xl placeholder:pl-0 lg:placeholder:pl-4">
           </div>
         </div>
         <!-- submit -->
         <div class="flex flex-col self-center justify-center pl-8 mt-16">
-          <button
+          <button type="submit"
             class="absolute lg:top-[7rem] lg:left-[36rem] lg:right-0 lg:mx-0 top-[7.5rem] left-0 right-0 mx-auto translaye flex flex-col justify-center items-center text-center z-[999] rounded-full lg:w-16 lg:h-16 w-12 h-12 bg-Purple-primary">
             <!-- svg -->
             <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 lg:w-8 lg:h-8" viewBox="0 0 46 44">
@@ -66,7 +67,7 @@
         <div class="flex flex-row items-start justify-between pt-16 lg:pt-4 ">
           <!-- result -->
           <div class="flex flex-row pr-4">
-            <h1 class="text-4xl font-extrabold lg:text-7xl text-Purple-primary">- -</h1>
+            <h1 aria-label="resultYear" class="text-4xl font-extrabold lg:text-7xl text-Purple-primary">- -</h1>
           </div>
           <!-- date -->
           <div class="pl-1 ">
@@ -79,7 +80,7 @@
         <div class="flex flex-row items-start justify-between pt-2 lg:pt-2">
           <!-- result -->
           <div class="pr-4">
-            <h1 class="text-4xl font-extrabold lg:text-7xl text-Purple-primary">- -</h1>
+            <h1 aria-label="resultMonth" class="text-4xl font-extrabold lg:text-7xl text-Purple-primary">- -</h1>
           </div>
           <!-- date -->
           <div class="pl-1 ">
@@ -90,7 +91,7 @@
         <div class="flex flex-row items-start justify-between pt-2 lg:pt-2">
           <!-- result -->
           <div class="pr-4">
-            <h1 class="text-4xl font-extrabold lg:text-7xl text-Purple-primary">- -</h1>
+            <h1 aria-label="resultDay" class="text-4xl font-extrabold lg:text-7xl text-Purple-primary">- -</h1>
           </div>
           <!-- date -->
           <div class="pl-1">
