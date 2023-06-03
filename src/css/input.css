@@ -7,3 +7,12 @@
     @apply max-w-3xl py-8 mx-auto;
   }
 }
+.just-validate-error-label {
+  @apply pt-1 text-xs italic opacity-80;
+}
+.just-validate-success-label {
+  @apply pt-1 text-xs italic text-green-600;
+}
+.just-validate-error-label {
+  color: hsl(0, 100%, 67%) !important;
+}

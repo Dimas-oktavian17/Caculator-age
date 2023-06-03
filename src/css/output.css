@@ -609,6 +609,10 @@ video {
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
 .h-12 {
   height: 3rem;
 }
@@ -755,6 +759,10 @@ video {
   padding-right: 1rem;
 }
 
+.pt-1 {
+  padding-top: 0.25rem;
+}
+
 .pt-16 {
   padding-top: 4rem;
 }
@@ -785,17 +793,25 @@ video {
   line-height: 1rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .font-black {
   font-weight: 900;
 }
 
 .font-extrabold {
   font-weight: 800;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.text-Light-red-primary {
+  --tw-text-opacity: 1;
+  color: hsl(0 100% 67% / var(--tw-text-opacity));
 }
 
 .text-Off-black-neutral {
@@ -813,12 +829,39 @@ video {
   color: hsl(0 1% 44% / var(--tw-text-opacity));
 }
 
-.text-red-600 {
+.text-green-300 {
   --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity));
+  color: rgb(134 239 172 / var(--tw-text-opacity));
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 /* container */
+
+.just-validate-error-label {
+  padding-top: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.just-validate-success-label {
+  padding-top: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-style: italic;
+  --tw-text-opacity: 1;
+  color: rgb(22 163 74 / var(--tw-text-opacity));
+}
+
+.just-validate-error-label {
+  color: hsl(0, 100%, 67%) !important;
+}
 
 .placeholder\:pl-0::-moz-placeholder {
   padding-left: 0px;
@@ -844,6 +887,19 @@ video {
 .placeholder\:text-Smokey-grey-neutral::placeholder {
   --tw-text-opacity: 1;
   color: hsl(0 1% 44% / var(--tw-text-opacity));
+}
+
+.hover\:bg-Off-black-neutral:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 8% / var(--tw-bg-opacity));
+}
+
+.focus\:outline-1:focus {
+  outline-width: 1px;
+}
+
+.focus\:outline-Purple-primary:focus {
+  outline-color: hsl(259, 100%, 65%);
 }
 
 @media (min-width: 1024px) {
@@ -925,14 +981,6 @@ video {
   .lg\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .lg\:placeholder\:pl-4::-moz-placeholder {
-    padding-left: 1rem;
-  }
-
-  .lg\:placeholder\:pl-4::placeholder {
-    padding-left: 1rem;
   }
 
   .lg\:placeholder\:text-xl::-moz-placeholder {
