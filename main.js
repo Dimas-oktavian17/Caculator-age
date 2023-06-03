@@ -1,11 +1,8 @@
 // Import Libray JustValidate for form validation
 import JustValidate from "just-validate";
-const validator = new JustValidate(
-  document.querySelector("#form")
-  // , {
-  //   validateBeforeSubmitting: true,
-  // }
-);
+const validator = new JustValidate(document.querySelector("#form"), {
+  validateBeforeSubmitting: true,
+});
 // Form validation
 validator
   // for day
